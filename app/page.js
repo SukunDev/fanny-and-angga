@@ -9,6 +9,7 @@ import Comments from "@/components/comments";
 import Gift from "@/components/gift";
 import Menu from "@/components/menu";
 import Song from "@/components/song";
+import { Suspense } from "react";
 
 export const metadata = {
   metadataBase: process.env.NEXT_PUBLIC_APP_URL,
@@ -125,11 +126,13 @@ export default function Home() {
   return (
     <>
       <main className="flex flex-col flex-wrap flex-1">
-        <Cover
-          shortNameFemale={data.family[0].nick_name}
-          shortNameMale={data.family[1].nick_name}
-          src={data.cover}
-        />
+        <Suspense>
+          <Cover
+            shortNameFemale={data.family[0].nick_name}
+            shortNameMale={data.family[1].nick_name}
+            src={data.cover}
+          />
+        </Suspense>
         <Hero
           imageList={data.imageList}
           weddingDate={data.weddingDate}
