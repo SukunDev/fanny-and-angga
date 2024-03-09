@@ -68,13 +68,7 @@ export default function Cover({ src, shortNameFemale, shortNameMale }) {
           </button>
         </div>
         <div className="absolute inset-0 z-0">
-          <Image
-            className="object-cover"
-            src={src}
-            alt="cover"
-            priority={true}
-            fill
-          />
+          <img className="object-cover w-full h-full" src={src} alt="cover" />
           <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-black/85 to-transparent"></div>
           <div className="absolute inset-0 w-full h-full bg-gradient-to-t from-white/50 via-transparent"></div>
         </div>

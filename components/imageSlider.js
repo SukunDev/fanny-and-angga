@@ -8,7 +8,7 @@ export default function ImageSlider({ listImage }) {
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {imageChunk?.map((item, idx) => (
-        <Image
+        <img
           key={idx}
           src={item}
           className={`object-cover w-full h-full absolute transition-opacity duration-1000 ${
@@ -19,8 +19,6 @@ export default function ImageSlider({ listImage }) {
           style={{ zIndex: idx + 1 }}
           alt={`Slide ${idx + 1}`}
           loading="lazy"
-          priority={false}
-          fill={true}
         />
       ))}
     </div>
