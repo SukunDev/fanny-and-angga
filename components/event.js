@@ -42,7 +42,7 @@ export default function Event({ listEvent, streaming }) {
                 >
                   <div className="relative px-8 text-white md:px-10 bg-stone-700">
                     <p
-                      data-aos={idx % 2 === 0 ? "fade-left" : "fade-right"}
+                      data-aos={idx % 2 === 0 ? "fade-down" : "fade-up"}
                       data-aos-delay={(idx + 1) * 100}
                       data-aos-duration="2000"
                       className="absolute inset-0 m-auto w-fit h-fit [writing-mode:vertical-lr] uppercase rotate-180 text-center text-xl md:text-2xl lg:text-3xl tracking-widest"
