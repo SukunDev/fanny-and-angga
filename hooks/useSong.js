@@ -13,7 +13,6 @@ function useSong() {
   useEffect(() => {
     const audio = songRef.current;
     if (data.isOpenned && audio.paused) {
-      audio.currentTime = 48.8;
       audio.play();
     }
   }, [data]);
