@@ -56,6 +56,8 @@ const data = {
       father_name: "Eko Santoso (ALM)",
       mother_name: "Suhaemi",
       image: "/img/IMG_0258.webp",
+      address:
+        "Kp. Rancabelut No.74-82 005/016, Kel. Padasuka Kec. Cimahi Tengah Kota Cimahi - 40526",
       type: "female",
     },
     {
@@ -64,6 +66,8 @@ const data = {
       father_name: "Entis Setiawan",
       mother_name: "Yuhaeni",
       image: "/img/IMG_0242.webp",
+      address:
+        "Perumahan Griya Pasundan Blok C No.17, Desa Kertajaya Kec. Padalarang Kab. Bandung Barat - 40553",
       type: "male",
     },
   ],
@@ -93,16 +97,18 @@ const data = {
       date: "27-04-2024",
       jam: "08.00 - 10.00",
       lokasi: "kediaman mempelai wanita",
-      address: "jalan padasuka no 16",
-      maps_link: "#",
+      address:
+        "Kp. Rancabelut No.74-82 005/016, Kel. Padasuka Kec. Cimahi Tengah Kota Cimahi - 40526",
+      maps_link: "https://maps.app.goo.gl/VQjmdXeA675wLqp17",
     },
     {
       title: "resepsi",
       date: "27-04-2024",
       jam: "11.00 - selesai",
       lokasi: "kediaman mempelai wanita",
-      address: "jalan padasuka no 16",
-      maps_link: "#",
+      address:
+        "Kp. Rancabelut No.74-82 005/016, Kel. Padasuka Kec. Cimahi Tengah Kota Cimahi - 40526",
+      maps_link: "https://maps.app.goo.gl/VQjmdXeA675wLqp17",
     },
   ],
   streaming: {
