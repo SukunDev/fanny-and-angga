@@ -4,6 +4,8 @@ import React from "react";
 import Lottie from "react-lottie";
 import animationData from "../public/birds";
 import { useThemeContext } from "./providers";
+import Link from "next/link";
+import { PiInstagramLogo } from "react-icons/pi";
 
 const defaultOptions = {
   loop: true,
@@ -19,10 +21,7 @@ function Couple({ coupleData }) {
   return (
     <>
       {data.isOpenned ? (
-        <section
-          id="couple"
-          className="relative mt-16 overflow-hidden text-center capitalize"
-        >
+        <section id="couple" className="relative mt-16 text-center capitalize">
           {coupleData.length > 0
             ? coupleData.map((item, idx) => (
                 <div key={idx}>
@@ -68,6 +67,14 @@ function Couple({ coupleData }) {
                             bapak {item.father_name} dan ibu {item.mother_name}
                           </p>
                         </div>
+                        <Link
+                          data-aos="fade-down"
+                          data-aos-delay={(idx + 1) * 200}
+                          className="block mx-auto text-2xl text-gray-500 transition duration-300 hover:text-gray-400 active:scale-110 w-fit"
+                          href={item.instagram}
+                        >
+                          <PiInstagramLogo />
+                        </Link>
                       </div>
                     </div>
                     {idx == 0 ? (

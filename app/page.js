@@ -59,6 +59,7 @@ const data = {
       address:
         "Kp. Rancabelut No.74-82 005/016, Kel. Padasuka Kec. Cimahi Tengah Kota Cimahi - 40526",
       type: "female",
+      instagram: "https://www.instagram.com/_sayafannyaaa",
     },
     {
       full_name: "Angga Saputra",
@@ -69,6 +70,7 @@ const data = {
       address:
         "Perumahan Griya Pasundan Blok C No.17, Desa Kertajaya Kec. Padalarang Kab. Bandung Barat - 40553",
       type: "male",
+      instagram: "https://www.instagram.com/anggasyahfutra",
     },
   ],
   cover: "/img/IMG_0180.webp",

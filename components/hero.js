@@ -4,6 +4,8 @@ import React from "react";
 import ImageSlider from "./imageSlider";
 import useHero from "@/hooks/useHero";
 import { useThemeContext } from "./providers";
+import Link from "next/link";
+import { PiCalendar } from "react-icons/pi";
 
 export default function Hero({
   imageList,
@@ -11,7 +13,7 @@ export default function Hero({
   shortNameFemale,
   shortNameMale,
 }) {
-  const { date, windowWidth } = useHero({ weddingDate });
+  const { date, windowWidth, calendarTime } = useHero({ weddingDate });
   const { data } = useThemeContext();
 
   return (
@@ -63,6 +65,14 @@ export default function Hero({
                 <p className="text-xs">seconds</p>
               </li>
             </ul>
+            <Link
+              className="block mt-4 text-sm"
+              href={`https://www.google.com/calendar/render?action=TEMPLATE&text=The%20Wedding%20of%20${shortNameFemale}%20&%20${shortNameMale}&details&dates=${calendarTime}/${calendarTime}&location`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <PiCalendar className="inline mr-1 -mt-1 text-lg" /> Save The Date
+            </Link>
           </div>
           <div className="absolute inset-0 z-[150] w-full h-full bg-gradient-to-t from-black/50 via-transparent"></div>
         </section>

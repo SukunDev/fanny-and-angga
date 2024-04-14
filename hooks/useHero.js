@@ -59,9 +59,21 @@ const convertDateFormat = (originalDate) => {
   };
 };
 
+const createCallendarTime = (originalDate) => {
+  var dateParts = originalDate.split(/[- :]/);
+  var year = parseInt(dateParts[2]);
+  var month = parseInt(dateParts[1]) - 1;
+  var day = parseInt(dateParts[0]);
+  var hour = parseInt(dateParts[3]);
+  var minute = parseInt(dateParts[4]);
+  var date = new Date(year, month, day, hour, minute);
+  return date.toISOString().replace(/[-:]/g, "").replace("T", "T");
+};
+
 function useHero({ weddingDate }) {
   const [date, setDate] = useState(null);
   const [windowWidth, setWindowWidth] = useState(0);
+  const calendarTime = createCallendarTime(weddingDate);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -80,7 +92,7 @@ function useHero({ weddingDate }) {
     }
   }, []);
 
-  return { date, windowWidth };
+  return { date, windowWidth, calendarTime };
 }
 
 export default useHero;
