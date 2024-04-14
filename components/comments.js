@@ -25,15 +25,12 @@ export default function Comments() {
     <>
       <section id="comment" className="relative z-10">
         <div className="bg-gradient-to-b from-white via-gray-200 to-gray-300">
-          <svg
-            className="rotate-180 fill-white"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 320"
-          >
-            <path d="M0,160L720,96L1440,160L1440,320L720,320L0,320Z"></path>
-          </svg>
+          <div>
+            <div className="w-full h-16 bg-white"></div>
+            <div className="w-0 h-0 border-x-[calc(50vw)] border-l-transparent border-t-[30px] md:border-t-[40px] border-t-white border-r-transparent"></div>
+          </div>
           <div className="container mx-auto">
-            <div className="px-2 text-center text-gray-500 capitalize md:-mt-8 lg:-mt-10">
+            <div className="px-2 mt-4 text-center text-gray-500 capitalize">
               <h3 className="text-lg font-medium text-gray-700 md:text-xl">
                 konfirmasi kehadiran
               </h3>

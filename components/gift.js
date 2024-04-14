@@ -12,7 +12,7 @@ export default function Gift() {
   return (
     <section
       id="gift"
-      className="px-4 pb-8 md:pt-16 bg-gradient-to-b from-stone-500 to-stone-700"
+      className="px-4 pb-8 md:pt-10 bg-gradient-to-b from-stone-500 to-stone-700"
     >
       <div className="font-thin text-center capitalize text-stone-200">
         <h3 className="text-2xl md:text-3xl">wedding gift</h3>

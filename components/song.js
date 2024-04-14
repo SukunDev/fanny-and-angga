@@ -24,7 +24,7 @@ export default function Song() {
       <audio
         ref={songRef}
         id="play-song"
-        src="/cundamani nicken salindry.mp3"
+        src="/Amin Paling Serius.mp3"
         loop
       ></audio>
     </section>
