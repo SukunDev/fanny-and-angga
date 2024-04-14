@@ -28,7 +28,7 @@ export const metadata = {
   },
   openGraph: {
     title: `The Wedding Of Fanny & Angga`,
-    description: `Sabtu, 27 April 2024`,
+    description: `Sabtu, 27 April 2024, Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i, teman sekaligus sahabat, untuk menghadiri acara pernikahan kami.`,
     url: process.env.NEXT_PUBLIC_APP_URL,
     siteName: `fanny-and-angga`,
     locale: "id_ID",
