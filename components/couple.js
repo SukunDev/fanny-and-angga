@@ -47,7 +47,7 @@ function Couple({ coupleData }) {
                           alt={item.full_name}
                         />
                       </div>
-                      <div className="relative z-0 mt-8 space-y-3">
+                      <div className="relative z-0 mt-12 space-y-3">
                         <h3
                           data-aos="fade-down"
                           data-aos-delay={(idx + 1) * 0}

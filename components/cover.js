@@ -4,7 +4,6 @@ import useCover from "@/hooks/useCover";
 import React from "react";
 import { motion } from "framer-motion";
 import { PiEnvelopeLight, PiHeartFill } from "react-icons/pi";
-import Image from "next/image";
 
 export default function Cover({ src, shortNameFemale, shortNameMale }) {
   const { handleOpenButton, loaded, data, to } = useCover({ src });
