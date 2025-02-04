@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Undangan Fanny dan Angga
 
-## Getting Started
+Template undangan online ini dibuat menggunakan **Next.js** dan di-deploy di **Vercel** dengan **PostgreSQL** sebagai database.
 
-First, run the development server:
+## Fitur
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Desain responsif untuk tampilan desktop dan mobile
+- Halaman undangan dengan informasi acara
+- RSVP tamu dengan integrasi ke database PostgreSQL
+- Animasi interaktif untuk pengalaman pengguna yang lebih baik
+- Hosting gratis dan cepat di Vercel
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Teknologi yang Digunakan
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Framework:** Next.js
+- **Database:** PostgreSQL
+- **Hosting:** Vercel
+- **Styling:** Tailwind CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Cara Menjalankan Secara Lokal
 
-## Learn More
+1. Clone repository:
+   ```sh
+   git clone https://github.com/SukunDev/undangan-fanny-angga.git
+   cd undangan-fanny-angga
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Buat file **.env** dan tambahkan konfigurasi database PostgreSQL:
+   ```env
+   DATABASE_URL=postgresql://username:password@localhost:5432/undangan_db
+   ```
+4. Jalankan server lokal:
+   ```sh
+   npm run dev
+   ```
+   Aplikasi akan berjalan di `http://localhost:3000`
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment ke Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Install Vercel CLI:
+   ```sh
+   npm install -g vercel
+   ```
+2. Login ke Vercel:
+   ```sh
+   vercel login
+   ```
+3. Deploy aplikasi:
+   ```sh
+   vercel
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Kontribusi
 
-## Deploy on Vercel
+Jika ingin berkontribusi, silakan fork repo ini dan ajukan pull request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Lisensi
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Proyek ini menggunakan lisensi MIT.
+
+---
+
+Dibuat dengan ❤️ oleh SukunDev untuk Fanny & Angga.
